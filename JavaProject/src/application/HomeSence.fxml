@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.1890048154093098" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="98.0" prefWidth="822.0" style="-fx-background-color: #2d75e8;">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="78.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="9.0">
+               <image>
+                  <Image url="@Media/school.png" />
+               </image>
+               <effect>
+                  <DropShadow height="18.66" radius="6.49" width="9.3">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="99.0" layoutY="46.0" prefHeight="23.0" prefWidth="66.0" text="Future" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="90.0">
+               <font>
+                  <Font name="Cambria Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="99.0" layoutY="65.0" text="School Mangment" textFill="WHITE" AnchorPane.leftAnchor="90.0">
+               <font>
+                  <Font name="Cambria Bold Italic" size="19.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="849.0">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="858.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Media/Screenshot%202024-05-12%20060851.png" />
+               </image>
+            </ImageView>
+            <GridPane layoutX="53.4" layoutY="93.6" prefHeight="160.0" prefWidth="770.0" AnchorPane.leftAnchor="53.4" AnchorPane.topAnchor="93.6">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.20001220703125" minWidth="10.0" prefWidth="232.99998474121094" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="296.6" minWidth="10.0" prefWidth="233.39998779296877" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="276.8000122070313" minWidth="10.0" prefWidth="276.8000122070313" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="167.4" minHeight="10.0" prefHeight="130.3999816894531" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button layoutX="10.0" layoutY="15.0" mnemonicParsing="false" onAction="#switchToSubjectScene" prefHeight="120.0" prefWidth="230.0" style="-fx-background-color: #2d75e8; -fx-border-radius: 2em;" GridPane.columnIndex="2">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor></Button>
+                  <Button layoutX="255.0" layoutY="15.0" mnemonicParsing="false" onAction="#switchToDashScene" prefHeight="120.0" prefWidth="230.0" style="-fx-background-color: #2d75e8; -fx-border-radius: 2em;">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="15.0" mnemonicParsing="false" onAction="#switchToStdScene" prefHeight="120.0" prefWidth="230.0" style="-fx-border-radius: 2em; -fx-background-color: #2d75e8;" GridPane.columnIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor></Button>
+                  <ImageView fitHeight="69.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <GridPane.margin>
+                        <Insets bottom="30.0" left="78.0" top="20.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="@Media/home-icon-silhouette.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                     <effect>
+                        <ColorAdjust brightness="-0.07" contrast="0.02" />
+                     </effect>
+                  </ImageView>
+                  <Label prefHeight="23.0" prefWidth="101.0" text="Dashboard" textAlignment="CENTER" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets bottom="20.0" left="70.0" top="100.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Cairo Regular" size="19.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <ImageView accessibleRole="BUTTON" fitHeight="80.0" fitWidth="80.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="30.0" left="70.0" top="20.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="@Media/graduation.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="65.0" layoutX="325.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="50.0" left="75.0" top="20.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="@Media/open-book.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label prefHeight="28.0" prefWidth="77.0" text="Students" textFill="WHITE" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="30.0" left="75.0" top="100.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Cairo Regular" size="20.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="30.0" prefWidth="82.0" text="Subject" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Cairo Regular" size="20.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="30.0" left="66.0" top="95.0" />
+                     </GridPane.margin>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </GridPane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
