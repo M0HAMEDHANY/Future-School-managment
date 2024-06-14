@@ -82,7 +82,6 @@ The sign-up process allows new users to create an account.
 - **Registration Failure**: If the user already exists, an error message is displayed indicating that the username or email is already taken.
 
 ## Database Schema
-![image](https://github.com/mohameddhanyyy/Future-School-managment/assets/130695667/fcc1f96d-2439-4094-8f4c-4c988ab201bf)
 ![image](https://github.com/mohameddhanyyy/Future-School-managment/assets/130695667/3f747648-cc08-4b6f-a744-1e2af3b0523a)
 
 
